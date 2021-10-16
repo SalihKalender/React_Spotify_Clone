@@ -11,7 +11,7 @@ const barlist = () => {
             <br />
             <div className="hr" />
             <PlayLists />
-
+            <InstallApp />
         </div>
     )
 }

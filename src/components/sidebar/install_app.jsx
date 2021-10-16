@@ -1,9 +1,12 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-export const install_app = () => {
+const install_app = () => {
     return (
-        <div>
-            
+        <div className="install_app">
+            <FontAwesomeIcon icon={faArrowDown} />
+            <span>Install App</span>
         </div>
     )
 }
