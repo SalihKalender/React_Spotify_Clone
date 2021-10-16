@@ -1,10 +1,8 @@
 import './App.scss'
-import SideBar from './components/sidebar/index'
+import Router from './router/index'
 function App() {
   return (
-    <>
-      <SideBar />
-    </>
+    <Router />    
   )
 }
 
