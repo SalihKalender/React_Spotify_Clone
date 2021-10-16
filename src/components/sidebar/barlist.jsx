@@ -1,11 +1,13 @@
 import React from 'react'
 import BarItems from './bar_items'
-import PlayLists from './playlists'
+import AddPlayLists from './playlists'
 const barlist = () => {
     return (
         <div className="bar_list">
             <BarItems />
-            <PlayLists />
+            <AddPlayLists />
+            <br />
+            <div className="hr" />
         </div>
     )
 }
