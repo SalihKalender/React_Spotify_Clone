@@ -9,11 +9,17 @@ $font: 'Montserrat', sans-serif;
 #root {
   background: linear-gradient(350deg, rgba(18,18,18,1) 0%, rgba(34,34,34,1) 100%);
   display: flex;  // Sidebar'ı tanısın herkes o yuzden
+  overflow: hidden;
 }
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit; // Yani bu element'in ozelligi yerine baska bir ozellik tanımlanmıssa o gelir
+}
+button {
+  border: inherit;
+  outline: inherit;
+  background: inherit;
 }

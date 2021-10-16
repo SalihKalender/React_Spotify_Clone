@@ -11,7 +11,7 @@ import Library from '../components/content/library/index'
 export default function App() {
   return (
     <Router>
-      <div>
+      <div className="page_container">
         <SideBar />
         <Switch>
           <Route path="/">

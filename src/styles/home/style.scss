@@ -1,0 +1,64 @@
+.homepage_container {
+    width: 100%;
+    height: 100%;
+    .top_section {
+        width: 100%;
+        height: 2rem;
+        padding: 2rem 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .buttons {
+            width: 5rem;
+            height: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .button_container {
+                width: 2rem;
+                height: 2rem;
+                background-color: #191919;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .profile_premium {
+            width: 19rem;
+            display: flex;
+            justify-content: space-between;
+            .pp_button {
+                border: 1px solid rgba(255, 255, 255,.4);
+                background-color: rgba(0, 0, 0, .2);
+                border-radius: 100px;
+                color: #fff;
+            }
+            .profile_button {
+                padding: .5rem 2.5rem;
+                font-weight: 600;
+                font-size: .85rem;
+            }
+            .premium_button {
+                width: 8.5rem;
+                position: relative;
+                padding: .3rem 1.1rem;
+                padding-left: 2.15rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                svg {   // Bu icon neden sıkıntılı lan
+                    position: relative;
+                    bottom: .25rem;
+                }
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 1.6rem;
+                    height: 90%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
