@@ -1,22 +1,15 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
-import LikedSongs from '../../image_icons/liked-songs-300.png'
+
 export const playlists = () => {
     return (
-        <div className="playlists">
-            <h2>PLAYLISTS</h2>
-            <ul className="playlist_list">
-                <li>
-                    <FontAwesomeIcon icon={faPlusSquare} size="2x"/>
-                    <span>Create Playlist</span>
-                </li>
-                <li>
-                    <img src={LikedSongs} />
-                    <span>Liked Songs</span>
-                </li>
-            </ul>
-        </div>
+        <ul className="self_playlist_list">
+            <li>Türkçe Pop</li>
+            <li>Yabancı Pop</li>
+            <li>Yabancı Rock</li>
+            <li>From Tiktok</li>
+            <li>Instagram Reels</li>
+            <li>Radyo'dan Begenilenler</li>
+        </ul>
     )
 }
 
