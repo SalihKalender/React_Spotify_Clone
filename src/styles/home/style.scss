@@ -76,9 +76,62 @@
             width: 100%;
             .playlist {
                 width: 100%;
-                height: 15rem;
-                background-color: #da4453;
+                height: 21rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // background-color: #da4453;
                 margin-bottom: 3rem;
+                padding: .2rem;
+                padding-left: 2.5rem;
+                .header {
+                    font-size: 1.25rem;
+                    flex-basis: 15%;
+                    span {
+                        padding-top: .2rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+                span {
+                    display: block;
+                    font-weight: 400;
+                    font-size: .9rem;
+                    color: hsl(0, 0%, 67%);
+                    padding-top: -1rem;
+                }
+                .boxes {
+                    flex-basis: 85%;
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 2rem;
+                    .box {
+                        width: 12rem;
+                        height: 100%;
+                        background-color: rgb(51, 51, 51,.15);
+                        padding: 1rem;
+                        border-radius: 5px;
+                        .image {
+                            width: 100%;
+                            height: 10rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .playlist_name {
+                            padding-top: .7rem;
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                        .playlist_dsc {
+                            display: block;
+                            padding-top: .4rem;
+                            font-weight: 400;
+                            font-size: .9rem;
+                            color: rgba(221, 221, 221,.7);
+                        }
+                    }
+                }
             }
         }
     }

@@ -22,7 +22,6 @@ const top_section = () => {
         if(section_target.current.style.backgroundColor != null) {
             section_target.current.style.backgroundColor = `rgba(0,0,0, ${opacity})` 
         }
-        console.log(section_target.current.style.backgroundColor)  
     }
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
