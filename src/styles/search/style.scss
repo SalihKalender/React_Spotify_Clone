@@ -1,0 +1,30 @@
+.page_container {
+    overflow-y: auto;
+    .search_section_container {
+        margin-top: 6rem;
+        padding-left: 3rem;
+        width: 100%;
+        .header {
+            font-size: 1.35rem;
+            letter-spacing: -1px;
+        }
+        .playlist_boxes {
+            width: 90%;
+            padding-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            .box {
+                width: 14rem;
+                height: 15rem;
+                // background-color: #da4435;
+                padding: 1rem;
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #da4453;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
