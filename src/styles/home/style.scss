@@ -95,6 +95,7 @@
         .playlists {
             margin-top: 6rem;
             width: 100%;
+            overflow-x: hidden;
             .playlist {
                 width: 100%;
                 height: 21rem;
@@ -127,11 +128,14 @@
                     gap: 2rem;
                     .box {
                         width: 12rem;
+
                         height: 100%;
                         background-color: rgb(51, 51, 51,.15);
                         padding: 1rem;
                         border-radius: 5px;
                         .image {
+                            min-width: 160px;
+                            min-height: 160px;
                             position: relative;
                             width: 100%;
                             height: 10rem;

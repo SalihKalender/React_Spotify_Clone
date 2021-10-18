@@ -1,0 +1,75 @@
+.library_playlists {
+    padding-top: 5.5rem;
+    padding-left: 3rem;
+    .playlists {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        .big_playlist {
+            width: 26rem;
+            height: 16.5rem;
+            background: linear-gradient(49.46deg,#450af5,#8e8ee5 99.16%);
+            border-radius: 5px;
+            position: relative;
+            .header {
+                position: absolute;
+                left: 2rem;
+                bottom: 2rem;
+                span {
+                    display: block;
+                    padding-top: .5rem;
+                }
+            }
+        }
+        .small_playlist {
+            width: 12rem;
+
+            height: 16.5rem;
+            background-color: #333;
+            margin-left: 2rem;
+            background-color: rgb(51, 51, 51,.15);
+            padding: 1rem;
+            border-radius: 5px;
+            .image {
+                position: relative;
+                width: 100%;
+                height: 10rem;
+                min-width: 160px;
+                min-height: 160px;
+                .play_icon {
+                    position: absolute;
+                    bottom: .75rem;
+                    right: .75rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    background-color: #1ed260;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+                    svg {
+                        position: relative;
+                        left: .1rem;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .playlist_name {
+                padding-top: .7rem;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            .playlist_dsc {
+                display: block;
+                padding-top: .4rem;
+                font-weight: 400;
+                font-size: .9rem;
+                color: rgba(221, 221, 221,.7);
+            }
+        }
+    }
+}

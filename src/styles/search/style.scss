@@ -19,10 +19,27 @@
                 // background-color: #da4435;
                 padding: 1rem;
                 .content {
+                    position: relative;
                     width: 100%;
                     height: 100%;
                     background-color: #da4453;
                     border-radius: 10px;
+                    padding: 1.2rem;
+                    font-size: .9rem;
+                    overflow: hidden;
+                    .image_container {
+                        position: absolute;
+                        transform: rotate(30deg);
+                        bottom: 0;
+                        right: -.5rem;
+                        width: 7rem;
+                        height: auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                        }
+                    }
                 }
             }
         }
