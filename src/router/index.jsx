@@ -14,12 +14,12 @@ export default function App() {
       <div className="page_container">
         <SideBar />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/search">
-            <Search />
-          </Route>
+          <Route path="/search" render={(props) => (
+              <Search {...props} authed={true} />
+          )} />
           <Route path="/library">
             <Library />
           </Route>

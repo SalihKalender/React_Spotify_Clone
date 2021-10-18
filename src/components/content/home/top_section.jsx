@@ -8,7 +8,8 @@ import ProfileSrc from '../../../images/profile_picture.png'
 
 
 
-const top_section = () => {
+const top_section = (props) => {
+    const search_box = useRef(null)
     const section_target = useRef(null)
     const handleScroll = function(event) {
         const scroll = window.scrollY
@@ -24,6 +25,7 @@ const top_section = () => {
         }
     }
     useEffect(() => {
+        console.log()
         window.addEventListener('scroll', handleScroll);
     }, [])
     return (
@@ -36,6 +38,15 @@ const top_section = () => {
                     <FontAwesomeIcon icon={faChevronRight} />
                 </div>
             </div>
+            {
+                props.is_search == '/search'
+                ?
+                <div className="search_container" ref={search_box}>
+                    <input className="search_input" placeholder="Sanatçılar, şarkılar veya podcast'ler" />
+                </div>
+                :
+                <></>                
+            }
             <div className="profile_premium">
                 <button className="profile_button pp_button">
                     YÜKSELT

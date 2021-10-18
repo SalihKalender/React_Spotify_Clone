@@ -10,6 +10,8 @@ $font: 'Montserrat', sans-serif;
   background: linear-gradient(350deg, rgba(18,18,18,1) 0%, rgba(34,34,34,1) 100%);
   display: flex;  // Sidebar'ı tanısın herkes o yuzden
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 ul {
   list-style: none;
