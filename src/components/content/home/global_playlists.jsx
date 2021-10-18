@@ -20,6 +20,16 @@ import Album18 from '../../../images/album_18.png'
 import Album19 from '../../../images/album_19.png'
 import Album20 from '../../../images/album_20.png'
 import Album21 from '../../../images/album_21.png'
+import Global50 from '../../../images/global_50.png'
+import Turkey50 from '../../../images/turkey_50.png'
+import This_is_1 from '../../../images/this_is_1.png'
+import This_is_2 from '../../../images/this_is_2.png'
+import This_is_3 from '../../../images/this_is_3.png'
+import This_is_4 from '../../../images/this_is_4.png'
+import This_is_5 from '../../../images/this_is_5.png'
+import This_is_6 from '../../../images/this_is_6.png'
+
+import PlayIcon from './play_icon'
 
 const global_playlists = () => {
     return (
@@ -30,67 +40,156 @@ const global_playlists = () => {
                     <div className="boxes">
                         <div className="box">
                             <div className="image">
-                                <img src={Album1} />
+                                <img src={Global50} />
+                                <PlayIcon />
                             </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <h4 className="playlist_name">Top 50 - Global</h4>
+                            <span className="playlist_dsc">Suanda en cok calinan parcalar icin...</span>
                         </div>
                         <div className="box">
                             <div className="image">
-                                <img src={Album2} />
+                                <img src={Turkey50} />
+                                <PlayIcon />
                             </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <h4 className="playlist_name">Top 50 - Turkey</h4>
+                            <span className="playlist_dsc">Suanda en cok calinan parcalar icin...</span>
                         </div>
                     </div>
                 </div>
                 <div className="playlist">
                     <h2 className="header">
+                        100% MUSIC
+                        <span>Most Listened 2021</span>
+                    </h2>
+                    <div className="boxes">
+                        <div className="box">
+                            <div className="image">
+                                <img src={This_is_1} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">This is Ed Sheeran</h4>
+                            <span className="playlist_dsc">Ed Sheeran Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={This_is_2} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">This is ZAYN</h4>
+                            <span className="playlist_dsc">ZAYN Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={This_is_3} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">This is Drake</h4>
+                            <span className="playlist_dsc">Drake Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={This_is_4} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">This is Twenty One Pilots</h4>
+                            <span className="playlist_dsc">Twenty One Pilots Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={This_is_5} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">This is XXXTENTACION</h4>
+                            <span className="playlist_dsc">XXXTENTACION Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={This_is_6} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">This is Taylor Swift</h4>
+                            <span className="playlist_dsc">Taylor Swift Playlist</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="playlist">
+                <h2 className="header">
                         Yakınlarda çalinanlar
                         <span>2020'nin Seslerini dinle</span>
                     </h2>
                     <div className="boxes">
                         <div className="box">
                             <div className="image">
-                                <img src={Album3} />
+                                <img src={Album1} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={Album2} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">KALENDER</h4>
+                            <span className="playlist_dsc">Kalender Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={Album3} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">KALENDER</h4>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album4} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album5} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album6} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album7} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album8} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
+                        </div>
+                        <div className="box">
+                            <div className="image">
+                                <img src={Album9} />
+                                <PlayIcon />
+                            </div>
+                            <h4 className="playlist_name">KALENDER</h4>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                     </div>
                 </div>
@@ -102,138 +201,76 @@ const global_playlists = () => {
                     <div className="boxes">
                         <div className="box">
                             <div className="image">
-                                <img src={Album9} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
                                 <img src={Album10} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album11} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album12} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album13} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album14} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album15} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album16} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album17} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="playlist">
-                <h2 className="header">
-                        Yakınlarda çalinanlar
-                        <span>2020'nin Seslerini dinle</span>
-                    </h2>
-                    <div className="boxes">
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album18} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album19} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album20} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album21} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album6} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album8} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album4} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
-                        </div>
-                        <div className="box">
-                            <div className="image">
-                                <img src={Album2} />
-                            </div>
-                            <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         
                         <div className="box">
                             <div className="image">
-                                <img src={Album7} />
+                                <img src={Album18} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                     </div>
                 </div>
@@ -245,66 +282,75 @@ const global_playlists = () => {
                     <div className="boxes">
                         <div className="box">
                             <div className="image">
-                                <img src={Album10} />
+                                <img src={Album19} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
-                                <img src={Album15} />
+                                <img src={Album20} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
-                                <img src={Album14} />
+                                <img src={Album21} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
-                                <img src={Album1} />
+                                <img src={Album5} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album2} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album18} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album13} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album11} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                         <div className="box">
                             <div className="image">
                                 <img src={Album3} />
+                                <PlayIcon />
                             </div>
                             <h4 className="playlist_name">KALENDER</h4>
-                            <span className="playlist_dsc">Kalender Calma Listesi</span>
+                            <span className="playlist_dsc">Kalender Playlist</span>
                         </div>
                     </div>
                 </div>
