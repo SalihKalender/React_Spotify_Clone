@@ -12,21 +12,21 @@ const top_section = (props) => {
     const search_box = useRef(null)
     const section_target = useRef(null)
     const { PlayListContainer } = useContext(Element_context)
-    if(PlayListContainer != null) {
-        PlayListContainer.current.addEventListener('scroll',() => {
-            const scroll = PlayListContainer.current.scrollTop
-            let opacity = 0
-            if(scroll < 46) {
-                opacity = scroll / 45
-            } 
-            else {
-                opacity = 1
-            }
-            if(section_target.current.style.backgroundColor != null) {
-                section_target.current.style.backgroundColor = `rgba(0,0,0, ${opacity})` 
-            }
-        })
-    }
+        if(PlayListContainer != null) {
+            PlayListContainer.current.addEventListener('scroll',() => {
+                const scroll = PlayListContainer.current.scrollTop
+                let opacity = 0
+                if(scroll < 46) {
+                    opacity = scroll / 45
+                } 
+                else {
+                    opacity = 1
+                }
+                if(section_target.current.style.backgroundColor != null) {
+                    section_target.current.style.backgroundColor = `rgba(0,0,0, ${opacity})` 
+                }
+            })
+        }
     return (
         <div className="top_section" ref={section_target}>
             <div className="buttons">

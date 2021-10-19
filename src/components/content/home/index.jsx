@@ -8,7 +8,7 @@ export const index = () => {
     return (
         <div className="homepage_container">
             <ElementContext.Provider value={{PlayListContainer, setPlayListContainer}}>
-                <TopSection />
+                <TopSection is_home={true}/>
                 <GlobalPlaylists />
             </ElementContext.Provider>
         </div>
