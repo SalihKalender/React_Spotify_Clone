@@ -74,5 +74,5 @@ const datas = {
         { image: Album10, name: 'KALENDER', description: 'KALENDER Playlist'},
     ]
 }
-console.log(typeof datas.new_listened)
+
 export default datas

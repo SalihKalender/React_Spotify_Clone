@@ -1,33 +1,32 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 import ProfileSrc from '../../../images/profile_picture.png'
-
+import Element_context from '../../context'
 
 
 const top_section = (props) => {
     const search_box = useRef(null)
     const section_target = useRef(null)
-    const handleScroll = function(event) {
-        const scroll = window.scrollY
-        let opacity = 0
-        if(scroll < 46) {
-            opacity = scroll / 45
-        } 
-        else {
-            opacity = 1
-        }
-        if(section_target.current.style.backgroundColor != null) {
-            section_target.current.style.backgroundColor = `rgba(0,0,0, ${opacity})` 
-        }
+    const { PlayListContainer } = useContext(Element_context)
+    if(PlayListContainer != null) {
+        PlayListContainer.current.addEventListener('scroll',() => {
+            const scroll = PlayListContainer.current.scrollTop
+            let opacity = 0
+            if(scroll < 46) {
+                opacity = scroll / 45
+            } 
+            else {
+                opacity = 1
+            }
+            if(section_target.current.style.backgroundColor != null) {
+                section_target.current.style.backgroundColor = `rgba(0,0,0, ${opacity})` 
+            }
+        })
     }
-    useEffect(() => {
-        console.log()
-        window.addEventListener('scroll', handleScroll);
-    }, [])
     return (
         <div className="top_section" ref={section_target}>
             <div className="buttons">

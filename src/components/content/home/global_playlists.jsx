@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import datas from './data/palylist_datas'
 import Box from './box'
+import Element_context from '../../context'
 const global_playlists = () => {
+    const { setPlayListContainer, PlayListContainer } = useContext(Element_context)
     const container = useRef(null)
     const [setting_item_count, setItemCount]  = useState(0)
     useEffect(() => {
         const container_width = container.current.offsetWidth
-        console.log(container_width)
         const rounded_width = (Math.floor((container_width / 100)) * 100)
         let item_count = null
         if( rounded_width > 100 ) {
@@ -17,12 +18,12 @@ const global_playlists = () => {
             item_count = Math.floor((rounded_width / 10) / 2) - 2
             setItemCount(item_count)
         }
-        console.log(setting_item_count)
-        console.log(datas)
+        setPlayListContainer(container)
+        // console.log(PlayListContainer)
     })
     return (
-        <div className="global_playlists" ref={container}>
-            <div className="playlists">
+        <div className="global_playlists">
+            <div className="playlists" ref={container}>
                 <div className="playlist">
                     <h2 className="header">Yakınlarda çalinanlar</h2>
                     <div className="boxes">
