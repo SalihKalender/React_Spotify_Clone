@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect, useContext, useRef } from 'react'
 import TopSection from '../home/top_section'
 import '../../../styles/library/style.scss'
 import Global50 from '../../../images/global_50.png'
 import PlayIcon from '../home/play_icon'
+import ElementContext from '../../context'
 export const index = () => {
+    const { setPlayListContainer } = useContext(ElementContext)
+    const container = useRef(null)
+    useEffect(() => {
+        setPlayListContainer(container)
+    })
     return (
         <div className="homepage_container">
-            <div className="page_container">
+            <div className="page_container" ref={container}>
                 <TopSection />
                 <div className="library_playlists">
                     <h2>Playlists</h2>

@@ -41,7 +41,13 @@
                 display: flex;
                 align-items: center;
                 svg, .item_text {
+                    transition: all .3s;
                     opacity: .75;
+                    &:hover {
+                        opacity: 1;
+                        transition: all .3s;
+                        cursor: pointer;
+                    }
                 }
                 .item_text {
                     padding-left: 1rem;
@@ -101,6 +107,12 @@
                 padding-bottom: .5rem;
                 font-size: .95rem;
                 opacity: .75;
+                transition: all .3s;
+                &:hover {
+                    opacity: 1;
+                    transition: all .3s;
+                    cursor: pointer;
+                }
             }
         }
         .install_app {
