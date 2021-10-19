@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useContext } from 'react'
 import TopSection from '../home/top_section'
 import '../../../styles/search/style.scss'
 import Album1 from '../../../images/album_1.png'
@@ -22,7 +22,12 @@ import Album18 from '../../../images/album_18.png'
 import Album19 from '../../../images/album_19.png'
 import Album20 from '../../../images/album_20.png'
 import Album21 from '../../../images/album_21.png'
+
+import ElementContext from '../../context'
+
 export const index = (props) => {
+    const { setPlayListContainer } = useContext(ElementContext)
+    const container = useRef(null)
     const is_Search = props.location.pathname
     const random_Items = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
     const random_color = () => {
@@ -33,9 +38,12 @@ export const index = (props) => {
         }
         return colorName
     }
+    useEffect(() => {
+        setPlayListContainer(container)
+    })
     return (
         <div className="homepage_container">
-            <div className="page_container">
+            <div className="page_container" ref={container}>
                 <TopSection is_search={is_Search} />
                 <div className="search_section_container">
                     <h2 className="header">Hepsine göz at</h2>

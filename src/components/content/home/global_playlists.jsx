@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import datas from './data/palylist_datas'
 import Box from './box'
-import Element_context from '../../context'
+import ElementContext from '../../context'
 const global_playlists = () => {
-    const { setPlayListContainer, PlayListContainer } = useContext(Element_context)
+    const { setPlayListContainer } = useContext(ElementContext)
     const container = useRef(null)
     const [setting_item_count, setItemCount]  = useState(0)
     useEffect(() => {
