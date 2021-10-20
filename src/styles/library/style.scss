@@ -22,8 +22,8 @@
             }
         }
         .small_playlist {
+            transition: all .15s;
             width: 12rem;
-
             height: 16.5rem;
             background-color: #333;
             margin-left: 2rem;
@@ -38,12 +38,13 @@
                 min-height: 160px;
                 .play_icon {
                     position: absolute;
-                    bottom: .75rem;
+                    bottom: 0;
                     right: .75rem;
                     width: 2.5rem;
                     height: 2.5rem;
                     border-radius: 50%;
                     background-color: #1ed260;
+                    opacity: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -69,6 +70,18 @@
                 font-weight: 400;
                 font-size: .9rem;
                 color: rgba(221, 221, 221,.7);
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: #333333;    // ilgili box hover oldugunda burası artacak
+                transition: all .15s;
+                .image {
+                    .play_icon {
+                        bottom: .75rem;
+                        opacity: 1;
+                        transition: all .15s;
+                    }
+                }
             }
         }
     }

@@ -81,11 +81,19 @@
                         font-size: .9rem;
                     }
                     svg, span {
+                        transition: all .15s;
                         opacity: .75;
                     }
                     img {
                         width: 2rem;
                         height: auto;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        svg, span {
+                            transition: all .15s;
+                            opacity: 1;
+                        }
                     }
                 }
             }

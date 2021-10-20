@@ -2,8 +2,11 @@ import React, { useEffect, useContext, useRef } from 'react'
 import TopSection from '../home/top_section'
 import '../../../styles/library/style.scss'
 import Global50 from '../../../images/global_50.png'
+import Turkey50 from '../../../images/turkey_50.png'
+import Album10 from '../../../images/album_10.png'
 import PlayIcon from '../home/play_icon'
 import ElementContext from '../../context'
+import BigPlaylist from './big_playlist'
 export const index = () => {
     const { setPlayListContainer } = useContext(ElementContext)
     const container = useRef(null)
@@ -17,12 +20,7 @@ export const index = () => {
                 <div className="library_playlists">
                     <h2>Playlists</h2>
                     <div className="playlists">
-                        <div className="big_playlist">
-                            <div className="header">
-                                <h2>Liked Songs</h2>
-                                <span>14 Liked Song</span>
-                            </div>
-                        </div>
+                        <BigPlaylist />
                         <div className="small_playlist">
                              <div className="image">
                                 <img src={Global50} />
@@ -33,7 +31,7 @@ export const index = () => {
                         </div>
                         <div className="small_playlist">
                         <div className="image">
-                                <img src={Global50} />
+                                <img src={Turkey50} />
                                 <PlayIcon />
                             </div>
                             <h4 className="playlist_name">Top 50 - Global</h4>
@@ -41,7 +39,7 @@ export const index = () => {
                         </div>
                         <div className="small_playlist">
                         <div className="image">
-                                <img src={Global50} />
+                                <img src={Album10} />
                                 <PlayIcon />
                             </div>
                             <h4 className="playlist_name">Top 50 - Global</h4>
