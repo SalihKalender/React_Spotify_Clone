@@ -1,15 +1,15 @@
 #### Home Page
 
-![](./resources/resources/Home.png)
+![](./resources/Home.png)
 
 
 
 #### Search Page
 
-![](./resources/resources/search.png)
+![](./resources/search.png)
 
 
 
 #### Library Page
 
-![](./resources/resources/library.png)
+![](./resources/library.png)
