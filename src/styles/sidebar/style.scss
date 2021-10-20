@@ -34,7 +34,7 @@
                     opacity: 1 !important;
                 }
             }
-            li {
+            a {
                 border-radius: 5px;
                 padding: .5rem .8rem;
                 flex-basis: 33.33%;
@@ -53,9 +53,6 @@
                     padding-left: 1rem;
                     font-size: .8rem;
                     font-weight: 600;
-                }
-                .search_icon {
-                    font-weight: lighter;
                 }
             }
         }
