@@ -5,7 +5,7 @@ import SideBar from '../components/sidebar/index'
 import Home from '../components/content/home/index'
 import Search from '../components/content/search/index'
 import Library from '../components/content/library/index'
-
+import Playing from '../components/playing_music/index'
 import ElementContext from "../components/context";
 
 export default function App() {
@@ -28,6 +28,7 @@ export default function App() {
             </Route>
           </Switch>
           </ElementContext.Provider>
+          <Playing />
       </div>
     </Router>
   );

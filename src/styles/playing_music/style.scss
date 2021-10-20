@@ -1,0 +1,149 @@
+.playing_container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 1.15rem;
+    height: 5rem;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .65rem 1.5rem;
+    z-index: 4;
+    .music_items {
+        flex-basis: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .image_container {
+            width: 4rem;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .infos {
+            padding-left: .5rem;
+            h4 {
+                font-size: .75rem;
+                font-weight: 500;
+            }
+            span {
+                font-size: .65rem;
+                font-weight: 600;
+                color: #ddddddb3;
+                a {
+                    &:hover {
+                        color: #dddddd;
+                        text-decoration: underline;
+                        text-decoration-color: #dddddd;
+                    }
+                }
+            }
+        }
+        .icons {
+            display: flex;
+            width: 6rem;
+            padding-left: 2rem;
+            justify-content: space-between;
+            .heart_icon {
+                color: #1ed260;
+            }
+        }
+    }
+    .playing_items {
+        flex-basis: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .playing_icons {
+            width: 15rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .play_div {
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    z-index: 5;
+                    color: #333;
+                    position: relative;
+                    left: .1rem;
+                }
+            }
+        }
+        .time_infos {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                flex-basis: 1%;
+                font-size: .75rem;
+                color: #b3b3b3;
+            }
+            .bar {
+                flex-basis: 91%;
+                width: 100%;
+                height: 4px;
+                background-color: #535353;
+                border-radius: 10px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 30%;
+                    border-radius: 10px;
+                    background-color: #b3b3b3;
+                }
+                &:hover{
+                    &::after {
+                        background-color: #1ed260;
+                    }
+                }
+            }
+        }
+    }
+    .setting_items {
+        flex-basis: 15%;
+        padding-left: 4rem;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .bar {
+                flex-basis: 40%;
+                width: 100%;
+                height: 4px;
+                background-color: #535353;
+                border-radius: 10px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 30%;
+                    border-radius: 10px;
+                    background-color: #b3b3b3;
+                }
+                &:hover{
+                    &::after {
+                        background-color: #1ed260;
+                    }
+                }
+        }
+    }
+}
